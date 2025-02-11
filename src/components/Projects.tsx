@@ -4,20 +4,26 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A Flutter mobile app for managing personal finances.",
+    title: "Flutter Finance Manager",
+    description: "A comprehensive Flutter mobile app for personal finance management with real-time tracking and beautiful visualizations.",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     demoLink: "#",
     githubLink: "#",
   },
   {
-    title: "Project 2",
-    description: "An e-commerce app with real-time inventory management.",
+    title: "E-Commerce Platform",
+    description: "A full-featured e-commerce mobile application built with Flutter and Firebase, featuring real-time inventory management.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     demoLink: "#",
     githubLink: "#",
   },
-  // Add more projects as needed
+  {
+    title: "Social Media App",
+    description: "A modern social networking app developed in Flutter with features like real-time messaging and media sharing.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    demoLink: "#",
+    githubLink: "#",
+  },
 ];
 
 export const Projects = () => {
@@ -25,7 +31,7 @@ export const Projects = () => {
     <section id="projects" className="bg-muted">
       <div className="section-container">
         <h2 className="section-title">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
